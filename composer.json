@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/decoder-product",
+    "description": "Package decoder-product for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\DecoderProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/routing": "^7.0",
+        "monolog/monolog": "^3.2.0",
+        "symfony/lock": "^7.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0",
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
